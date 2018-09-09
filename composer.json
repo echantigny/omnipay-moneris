@@ -1,7 +1,20 @@
 {
-    "name": "kbahchevanov/omnipay-moneris",
+    "name": "echantigny/omnipay-moneris",
     "type": "library",
+    "version": "1.0.0",
     "description": "Moneris driver for the Omnipay payment processing library - Canada Merchant Resource Center",
+    "authors": [
+        {
+            "name": "Konstantin Bahchevanov",
+            "homepage": "https://github.com/kbahchevanov/omnipay-moneris",
+            "role": "Developer"
+        },
+        {
+            "name": "Eric Chantigny",
+            "homepage": "https://github.com/echantigny/omnipay-moneris",
+            "role": "Updates"
+        }
+    ],
     "keywords": [
         "moneris",
         "gateway",
@@ -10,17 +23,12 @@
         "pay",
         "payment"
     ],
-    "homepage": "https://github.com/kbahchevanov/omnipay-moneris",
+    "homepage": "https://github.com/echantigny/omnipay-moneris",
     "license": "MIT",
     "autoload": {
-        "psr-0": { "Omnipay\\Moneris\\" : "src/" }
+        "psr-4": { "Omnipay\\Moneris\\" : "src/" }
     },
     "require": {
-        "omnipay/common": "~2.0"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
+        "omnipay/common": "~2.2"
     }
 }
