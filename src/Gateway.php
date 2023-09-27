@@ -16,6 +16,7 @@ class Gateway extends AbstractGateway
         return array(
             'psStoreId' => '',
             'hppKey' => '',
+            'checkoutId' => '',
             'testMode' => false
         );
     }
@@ -34,6 +35,14 @@ class Gateway extends AbstractGateway
     public function setHppKey($value)
     {
         return $this->setParameter('hppKey', $value);
+    }
+    public function getCheckoutId()
+    {
+        return $this->getParameter('checkoutId');
+    }
+    public function setCheckoutId($value)
+    {
+        return $this->setParameter('checkoutId', $value);
     }
     public function getTestMode()
     {

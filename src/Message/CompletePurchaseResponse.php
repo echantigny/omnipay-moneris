@@ -10,7 +10,7 @@ class CompletePurchaseResponse extends AbstractResponse
 
     public function isSuccessful()
     {
-        return ((isset($this->data['message']) && strpos($this->data['message'],'APPROVED') !== false) || (isset($this->data['ISSCONF']) && isset($this->data['bank_approval_code']) && $this->data['bank_approval_code'] != '000000'));
+        return isset($this->data['ticket']);
     }
 
     public function getTransactionReference()
