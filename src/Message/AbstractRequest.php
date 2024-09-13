@@ -31,8 +31,17 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('hppKey', $value);
     }
 
+    public function getCheckoutId()
+    {
+        return $this->getParameter('checkoutId');
+    }
+
+    public function setCheckoutId($value)
+    {
+        return $this->setParameter('checkoutId', $value);
+    }
     public function getEndpoint()
     {
-        return $this->getTestMode() ? $this->testEndpoint : $this->liveEndpoint;
+        return "/checkout/paymentform";
     }
 }
